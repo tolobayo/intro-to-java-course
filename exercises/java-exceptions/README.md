@@ -5,6 +5,7 @@
 [![Maven Dependency Manager](https://img.shields.io/badge/dependency%20manager-Maven-AA215A.svg?style=for-the-badge)][3]
 
 The goal of this exercise is to practise:
+
 - Creating custom exceptions
 - Handling exceptions
 
@@ -24,16 +25,21 @@ try {
 }
 ```
 
+**Answer:** Yes, just need a try I guess? Initially I put no.
+
 ### Question 2
 
 What exception types can be caught by the following handler?
+
 ```java
 catch (Exception e) {
-    
+
 }
 ```
 
 What is wrong with using this type of exception handler?
+
+**Answer:** The Exception is too genei and wil
 
 ### Question 3
 
@@ -49,10 +55,12 @@ try {
 }
 ```
 
+**Answer:** The ArithmeticException will never run.
+
 ### Question 4
 
 ```java
-int[] A; 
+int[] A;
 A[0] = 0;
 ```
 
@@ -61,17 +69,17 @@ The above code produces (choose 1):
 - [ ] an error
 - [ ] a checked exception
 - [ ] an unchecked exception
-- [ ] a compile error
+- [x] a compile error
 - [ ] no exception
 
 ### Question 5
 
-The JVM starts running your program, but the JVM can't find the Java platform classes. 
+The JVM starts running your program, but the JVM can't find the Java platform classes.
 (The Java platform classes reside in classes.zip or rt.jar.)
 
 What happens (choose 1):
 
-- [ ] an error
+- [x] an error
 - [ ] a checked exception
 - [ ] an unchecked exception
 - [ ] a compile error
@@ -87,11 +95,13 @@ Create a class called `FileExtension` with the following methods:
 - `Map<String, int> map(List<String> filenames)`
 
 The `check` method should:
+
 - return `true` when the file extension is `.java`
 - return `false` when the file extension is not `.java`
 - throw a `FilenameException` when the file name is `null` or an empty string.
 
 The `map` method should:
+
 - check each provided file's extension and map the returned value as 1 if true or 0 if false
 - map `-1` when an exception occurs
 
@@ -125,18 +135,20 @@ mvnw clean test
 Your implementation is correct when all tests pass.
 
 #### :information_source: Notes
+
 If you want to experiment with the provided application in the App.java file, you can run the following command from the terminal:
 
 ```shell
 ./mvnw -q clean compile exec:java
 ```
-```
+
+````
 
 Or on Windows:
 
 ```bat
 mvnw -q clean compile exec:java
-```
+````
 
 [1]: https://docs.oracle.com/javase/21/docs/api/index.html
 [2]: https://junit.org/junit5/
