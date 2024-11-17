@@ -3,6 +3,7 @@
 [![Language](https://img.shields.io/badge/language-HTML-E54B20.svg?style=for-the-badge)][1]
 
 The goal of these programming exercises is to practise:
+
 - working with a web server
 - working with a web client
 - creating simple HTML pages
@@ -26,10 +27,14 @@ Analyse the following HTTP request:
 ```
 
 1. What is the requested URL?
+   - /martignon/index.html
 2. Which version of HTTP is used?
+   - Version 1.1
 3. Does the browser ask for a persistent or a non-persistent connection?
+   - Persistant
 4. What is, in your opinion, the utility in indicating the type (and version) of browser used by
-the client in the HTTP Request?
+   the client in the HTTP Request?
+   - This is because different browsers will have different ways of implementing features. If you want to define a unique experience for chrome users versus firefox users, for example, knowing the browser type and version will come in handy
 
 **<ins>Exercise 2</ins>**
 
@@ -44,6 +49,9 @@ An HTTP client sends the following message:
 
 Write down two feasible responses of the HTTP server (only the status line)
 
+- 404
+- 200
+
 ## :spider_web: HTML
 
 An HTML Form is a section of the document that collects input from the user. The input from the user is generally sent to a server (Web servers, Mail clients, etc). We use the HTML `<form>` element to create forms in HTML.
@@ -51,10 +59,6 @@ An HTML Form is a section of the document that collects input from the user. The
 Read [this documentation][2], and create a HTML form that looks like the following:
 
 ![HTML Form](./html-form.png)
-
-
-
-
 
 [1]: https://developer.mozilla.org/en-US/docs/Web/HTML
 [2]: https://developer.mozilla.org/en-US/docs/Learn/Forms/HTML5_input_types
